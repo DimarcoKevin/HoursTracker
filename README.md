@@ -1,0 +1,1 @@
+I am building an application for users to simply tap the "punch in" and "punch out" button on this app when they arrive and leave work. Included with some user info, this application will calculate the users pay and deductions. This application will be a work in progress. This is going to be an Android application built in Kotlin.
