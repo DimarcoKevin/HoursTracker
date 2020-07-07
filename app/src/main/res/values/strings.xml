@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Hours Tacker</string>
+    <string name="enter_name">Enter Your Name:</string>
+    <string name="name_hint">John Smith</string>
+    <string name="enter_birthday">Enter Your Birthday:</string>
+    <string name="birthday_hint">DD_MM_YYYY</string>
+    <string name="submit">Submit</string>
 </resources>
