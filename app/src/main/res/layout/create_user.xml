@@ -16,13 +16,26 @@
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/new_user_header"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <TextView
             android:id="@+id/lblName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center_horizontal|center_vertical"
-            android:text="@string/enter_name" />
+            android:text="@string/enter_name"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/txtName"
@@ -31,6 +44,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:gravity="center_horizontal|center_vertical"
             android:hint="@string/name_hint"
             android:inputType="textPersonName" />
@@ -42,7 +56,8 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center_horizontal|center_vertical"
-            android:text="@string/enter_birthday" />
+            android:text="@string/enter_birthday"
+            android:textColor="@color/black" />
 
         <EditText
             android:id="@+id/txtBirthday"
@@ -51,6 +66,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:ems="10"
+            android:importantForAutofill="no"
             android:gravity="center_horizontal|center_vertical"
             android:hint="@string/birthday_hint"
             android:inputType="textPersonName" />
@@ -60,9 +76,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
             android:background="@android:color/holo_green_dark"
             android:text="@string/submit" />
+
+        <TextView
+            android:id="@+id/txtOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="28sp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
