@@ -1,16 +1,18 @@
 package com.dimarco.hourstacker
 
 class Job {
-    var id: Int = 0
-    var companyName: String = ""
-    var positionTitle: String = ""
-    var wage: Double = 0.0
+    var id: Int? = null
+    var companyName: String? = null
+    var positionTitle: String? = null
+    var wage: Double? = null
 
-    constructor(companyName: String) {
-        this.companyName = companyName
+    constructor(id: Int, wage: Double) {
+        this.id = id
+        this.wage = wage
     }
 
-    constructor(companyName: String, positionTitle: String, wage: Double) {
+    constructor(id: Int, companyName: String, positionTitle: String, wage: Double) {
+        this.id = id
         this.companyName = companyName
         this.positionTitle = positionTitle
         this.wage = wage

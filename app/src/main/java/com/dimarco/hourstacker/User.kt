@@ -1,20 +1,14 @@
 package com.dimarco.hourstacker
 
-import java.util.*
-
 class User {
-    private var id: Int = 0
-    var name: String = ""
-    var birthday: String? = null
+    var id: Int? = null
+    var name: String? = null
 
 
-    constructor(name: String) {
+    constructor(id: Int, name: String) {
+        this.id = id
         this.name = name
     }
 
-    constructor(name: String, birthday: String) {
-        this.name = name
-        this.birthday = birthday
-    }
 
 }
