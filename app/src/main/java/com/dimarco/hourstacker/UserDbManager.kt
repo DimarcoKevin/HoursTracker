@@ -19,7 +19,7 @@ class UserDbManager {
      * creating sql table
      */
     var sqlDB: SQLiteDatabase? = null
-    val sqlCreateTable = "CREATE TABLE IF NOT EXISTS $dbTable ($colID INTEGER PRIMARY KEY AUTOINCREMENT, $colName VARCHAR(255);"
+    val sqlCreateTable = "CREATE TABLE IF NOT EXISTS $dbTable ($colID INTEGER PRIMARY KEY AUTOINCREMENT, $colName VARCHAR(255));"
 
     /**
      * constructor to create a readable/writeable database
