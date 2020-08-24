@@ -1,16 +1,20 @@
 package com.dimarco.hourstacker
 
+import android.content.ContentValues
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.create_user.*
 import java.lang.Exception
 
 class AddUser : AppCompatActivity() {
+
     /**
      * creating private values for each column in the User table
      */
     private val user = "User"
     private var id = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,4 +28,19 @@ class AddUser : AppCompatActivity() {
             ex.printStackTrace()
         }
     }
+
+    /**
+     * this will be called on click of the submit button
+     * it creates a copy of the database manager
+     * then puts the values into a ContentValues object
+     * then inserts them into the User database
+     */
+    fun submit(view: View) {
+        var userDbManager = UserDbManager(this)
+        var values = ContentValues()
+        values.put(user, txtName.text.toString())
+        
+
+    }
+
 }
