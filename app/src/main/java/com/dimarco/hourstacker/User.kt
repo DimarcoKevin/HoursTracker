@@ -2,12 +2,12 @@ package com.dimarco.hourstacker
 
 class User {
     var id: Int? = null
-    var name: String? = null
+    var user: String? = null
 
 
-    constructor(id: Int, name: String) {
+    constructor(id: Int, user: String) {
         this.id = id
-        this.name = name
+        this.user = user
     }
 
 
