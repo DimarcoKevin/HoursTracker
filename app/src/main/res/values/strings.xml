@@ -11,4 +11,6 @@
     <string name="job_title_hint">Computer Programmer</string>
     <string name="enter_your_wage">Enter Your Hourly Wage:</string>
     <string name="wage_hint">$33.50</string>
+    <string name="welcome">Welcome to my Hour Tracker Application</string>
+    <string name="create_user">Create a User!</string>
 </resources>
