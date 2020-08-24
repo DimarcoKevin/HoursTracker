@@ -60,6 +60,6 @@ class AddUser : AppCompatActivity() {
                 Toast.makeText(this, "Cannot edit user.", Toast.LENGTH_LONG).show()
             }
         }
-        finish()
+        //finish() // finish causes the app to crash
     }
 }
