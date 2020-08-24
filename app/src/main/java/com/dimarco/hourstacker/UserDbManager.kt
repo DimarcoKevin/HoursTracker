@@ -12,14 +12,14 @@ class UserDbManager {
     val dbName = "UsersDatabase"
     val dbTable = "Users"
     private val colID = "ID"
-    private val colName = "Name"
+    private val colUser = "User"
 
     /**
      * creating database variable
      * creating sql table
      */
     var sqlDB: SQLiteDatabase? = null
-    val sqlCreateTable = "CREATE TABLE IF NOT EXISTS $dbTable ($colID INTEGER PRIMARY KEY AUTOINCREMENT, $colName VARCHAR(255));"
+    val sqlCreateTable = "CREATE TABLE IF NOT EXISTS $dbTable ($colID INTEGER PRIMARY KEY AUTOINCREMENT, $colUser VARCHAR(255));"
 
     /**
      * constructor to create a readable/writeable database
@@ -61,7 +61,7 @@ class UserDbManager {
     }
 
     /**
-     * function is used to edit existing user information
+     * function is used to edit existing User information
      */
     fun edit(values: ContentValues, selection: String, selectionArgs: Array<String>): Int {
         return sqlDB!!.update(dbTable, values, selection, selectionArgs)
