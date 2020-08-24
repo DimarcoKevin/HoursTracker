@@ -7,4 +7,8 @@
     <string name="submit">Submit</string>
     <string name="enter_company_name">Enter Company Name:</string>
     <string name="company_name_hint">Google</string>
+    <string name="enter_job_title">Enter Your Job Title:</string>
+    <string name="job_title_hint">Computer Programmer</string>
+    <string name="enter_your_wage">Enter Your Hourly Wage:</string>
+    <string name="wage_hint">$33.50</string>
 </resources>
