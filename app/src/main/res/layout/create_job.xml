@@ -33,6 +33,50 @@
             android:importantForAutofill="no"
             android:inputType="textPersonName" />
 
+        <TextView
+            android:id="@+id/lblJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:text="@string/enter_job_title" />
+
+        <EditText
+            android:id="@+id/txtJobTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/job_title_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/lblWage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center_horizontal|center_vertical"
+            android:padding="10dp"
+            android:text="@string/enter_your_wage" />
+
+        <EditText
+            android:id="@+id/txtWage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="@string/wage_hint"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
         <Button
             android:id="@+id/btnSubmit"
             android:layout_width="match_parent"
