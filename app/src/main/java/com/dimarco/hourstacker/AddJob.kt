@@ -6,13 +6,12 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.create_job.*
-import kotlinx.android.synthetic.main.create_user.*
 import java.lang.Exception
 
 class AddJob : AppCompatActivity() {
 
     /**
-     * creating private values for each column in the User table
+     * creating private values for each column in the Job table
      */
     private var id = 0
     private val name = "Name"
@@ -41,14 +40,14 @@ class AddJob : AppCompatActivity() {
      * then inserts them into the Job database
      */
     fun submit(view: View) {
-        var userDbManager = UserDbManager(this)
+        var jobDbManager = JobDbManager(this)
         var values = ContentValues()
         values.put(name, txtCompanyName.text.toString())
         values.put(title, txtJobTitle.text.toString())
         values.put(wage, txtWage.text.toString())
 
         if (id == 0) {
-            val id = userDbManager.insert(values)
+            val id = jobDbManager.insert(values)
 
             if (id > 0) {
                 Toast.makeText(this, "Job has been added.", Toast.LENGTH_LONG).show()
@@ -58,7 +57,7 @@ class AddJob : AppCompatActivity() {
 
         } else {
             var selectionArgs = arrayOf(id.toString())
-            userDbManager.edit(values, "ID=?", selectionArgs)
+            jobDbManager.edit(values, "ID=?", selectionArgs)
 
             if (id > 0) {
                 Toast.makeText(this, "Job has been edited.", Toast.LENGTH_LONG).show()
