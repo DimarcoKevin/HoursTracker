@@ -20,7 +20,7 @@ class AddJob : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.create_user)
+        setContentView(R.layout.create_job)
 
         var bundle= intent.extras
         try {
@@ -44,7 +44,7 @@ class AddJob : AppCompatActivity() {
         var values = ContentValues()
         values.put(name, txtCompanyName.text.toString())
         values.put(title, txtJobTitle.text.toString())
-        values.put(wage, txtWage.text.toString())
+        values.put(wage, txtWage.text.toString().toFloat())
 
         if (id == 0) {
             val id = jobDbManager.insert(values)
