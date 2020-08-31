@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addJob"
+        android:icon="@drawable/add"
+        android:title="Add"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/more"
+        android:title="More"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always" />>
 
 </menu>
