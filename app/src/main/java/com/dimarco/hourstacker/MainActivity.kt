@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     /**
      * creating the array list for all the users
      */
-    private var userList = ArrayList<User>()
+    private var jobList = ArrayList<Job>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,11 +22,11 @@ class MainActivity : AppCompatActivity() {
 
     /**
      * creating a search query method
-     * this method will search by name, or by all if nothing is chosen
+     * this method will search by company name, or by all if nothing is chosen
      * it will iterate over all rows in the database that fit that title
      * and then return them in note form styling
      */
-    private fun loadUserQuery(title: String) {
+    private fun loadJobQuery(title: String) {
 
 
     }
