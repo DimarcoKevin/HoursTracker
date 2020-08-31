@@ -6,6 +6,11 @@ import android.view.View
 
 class MainActivity : AppCompatActivity() {
 
+    /**
+     * creating the array list for all the users
+     */
+    private var userList = ArrayList<User>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -14,4 +19,16 @@ class MainActivity : AppCompatActivity() {
     fun createUser(view: View) {
         setContentView(R.layout.create_user)
     }
+
+    /**
+     * creating a search query method
+     * this method will search by name, or by all if nothing is chosen
+     * it will iterate over all rows in the database that fit that title
+     * and then return them in note form styling
+     */
+    private fun loadUserQuery(title: String) {
+
+
+    }
+
 }
