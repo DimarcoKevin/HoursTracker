@@ -7,7 +7,7 @@ import android.view.View
 class MainActivity : AppCompatActivity() {
 
     /**
-     * creating the array list for all the users
+     * creating the array list for all the job
      */
     private var jobList = ArrayList<Job>()
 
@@ -16,9 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun createUser(view: View) {
-        setContentView(R.layout.create_user)
-    }
 
     /**
      * creating a search query method
