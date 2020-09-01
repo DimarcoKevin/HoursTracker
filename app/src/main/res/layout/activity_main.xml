@@ -7,38 +7,49 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/ll"
+        android:id="@+id/llMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/border"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="10dp">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/lblWelcome"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="@android:color/holo_blue_light"
-            android:padding="5dp"
-            android:text="@string/welcome"
-            android:textSize="18dp" />
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/lblJobs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="@android:color/holo_blue_light"
-            android:padding="5dp"
-            android:text="Jobs List"
-            android:textSize="18dp" />
+            <TextView
+                android:id="@+id/lblWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_blue_light"
+                android:padding="5dp"
+                android:text="@string/welcome"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/lblJobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@android:color/holo_blue_light"
+                android:padding="5dp"
+                android:text="@string/job_list"
+                android:textSize="18dp" />
 
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
