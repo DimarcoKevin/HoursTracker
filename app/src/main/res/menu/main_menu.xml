@@ -11,6 +11,6 @@
         android:icon="@drawable/more"
         android:title="More"
         app:actionViewClass="android.widget.SearchView"
-        app:showAsAction="always" />>
+        app:showAsAction="always" />
 
 </menu>
